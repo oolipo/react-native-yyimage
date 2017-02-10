@@ -12,7 +12,7 @@
 #import "YYImage.h"
 #import "RNYYImage.h"
 
-#import "RCTLog.h"
+#import <React/RCTLog.h>
 #import "RCTImageUtils.h"
 
 

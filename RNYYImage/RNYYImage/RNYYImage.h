@@ -6,7 +6,7 @@
 //  Copyright © 2017 Netbulls. All rights reserved.
 //
 
-#import "RCTView.h"
+#import <React/RCTView.h>
 #import "RNYYImage.h"
 
 @class RNYYImage;
