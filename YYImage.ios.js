@@ -15,7 +15,7 @@ const MODES = {
 	"stretch": ScaleToFill,
 	"contain": ScaleAspectFit,
 	"cover": ScaleAspectFill
-}
+};
 
 class YYImage extends Component {
 	static propTypes = {

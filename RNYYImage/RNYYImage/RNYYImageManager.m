@@ -2,9 +2,6 @@
 //  RNYYImageManager.m
 //  RNYYImage
 //
-//  Created by Marcin Pawlowski on 09/02/17.
-//  Copyright © 2017 Netbulls. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import <React/RCTUIManager.h>
