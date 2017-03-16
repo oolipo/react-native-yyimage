@@ -52,6 +52,8 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
 
 -(void)reloadImage {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    	if(_src == nil)
+        	return;
         NSData *_imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:_src]];
         
         if(_imageData == nil) {
