@@ -1,18 +1,18 @@
 {
-  "name": "react-native-yyimage",
-	"version": "0.1.0",
-  "description": "YYImage for React Native",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "react-native",
-    "yyimage",
-    "gif",
-    "image",
-    "animated"
-  ],
+	"name": "react-native-yyimage",
+	"version": "0.1.1",
+	"description": "YYImage for React Native",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"react-native",
+		"yyimage",
+		"gif",
+		"image",
+		"animated"
+	],
 	"author": "oolipo",
-  "license": "MIT"
+	"license": "MIT"
 }
