@@ -27,7 +27,7 @@ RCT_EXPORT_MODULE();
 }
 
 RCT_EXPORT_VIEW_PROPERTY(src, NSString);
-RCT_EXPORT_VIEW_PROPERTY(contentMode, NSNumber);
+RCT_EXPORT_VIEW_PROPERTY(contentMode, NSInteger);
 RCT_EXPORT_VIEW_PROPERTY(onLoadEnd, RCTDirectEventBlock)
 
 

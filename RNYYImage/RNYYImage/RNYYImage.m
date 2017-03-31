@@ -42,9 +42,9 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
     }
 }
 
-- (void)setContentMode:(NSNumber *)contentMode
+- (void)setContentMode:(NSInteger *)contentMode
 {
-    if(![contentMode isEqual:_contentMode]) {
+    if(contentMode != _contentMode) {
         _contentMode = contentMode;
         [self reloadImage];
     }
@@ -79,7 +79,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
             _image = [YYImage imageWithData:_imageData];
             [_imageView removeFromSuperview];
             _imageView = [[YYAnimatedImageView alloc] initWithImage:_image];
-            _imageView.contentMode = [_contentMode integerValue];
+            _imageView.contentMode = _contentMode;
             [self addSubview:_imageView];
             
         });

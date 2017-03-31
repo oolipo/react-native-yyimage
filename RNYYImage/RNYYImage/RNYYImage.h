@@ -11,7 +11,7 @@
 @interface RNYYImage : UIView
 
 @property (nonatomic, copy) NSString *src;
-@property (nonatomic, assign) NSNumber *contentMode;
+@property (nonatomic, assign) NSInteger *contentMode;
 @property (nonatomic, copy) RCTDirectEventBlock onLoadEnd;
 
 @end
