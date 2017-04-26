@@ -3,7 +3,7 @@
 import React, {Component, PropTypes} from "react";
 import {requireNativeComponent, NativeModules} from "react-native"
 import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
-
+const RNYYImageManager = NativeModules.RNYYImageManager;
 
 const {
 	ScaleToFill,
@@ -45,6 +45,18 @@ class YYImage extends Component {
 		return (
 			<RNYYImage {...this.props} src={src} contentMode={contentMode}/>
 		);
+	}
+
+	/**
+	 * Get size of the image.
+	 * Supports gifs, jpg, png, webp etc.
+	 *
+	 * @param uri uri to resource, remote or local.
+	 * @param success success callback.
+	 * @param failure failure callback.
+	 */
+	static getSize(uri, success: (width, height) => void, failure: (error) => void) {
+		RNYYImageManager.getSize(uri, success, failure);
 	}
 }
 

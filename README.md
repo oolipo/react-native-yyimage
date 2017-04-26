@@ -49,3 +49,8 @@ import YYImage from "react-native-yyimage";
 				onLoadEnd={(event) => this.onLoadEnd(event)}/>;
 ...
 ```
+
+# Changelog
+
+## Version 0.1.4
+- Add method to get size of image (jpg, png, gif, webp - for webp need to install WebP framework from native YYImage)
